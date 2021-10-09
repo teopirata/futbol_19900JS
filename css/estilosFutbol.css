@@ -1,0 +1,50 @@
+.preCarga {
+    background: #00a8e6;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  .preCarga .carga {
+    margin: -30px 0 0 -30px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    background: url("/img/logo-loader.png") 50% 50% no-repeat #cec7c8;
+    animation-name: spin;
+    animation-duration: 700ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @-moz-keyframes spin {
+    from {
+      -moz-transform: rotate(0deg);
+    }
+    to {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
